@@ -1,0 +1,40 @@
+{
+  "BigQuery Schema": [
+    {
+      "name": "supplierid","type": "STRING"
+    },
+    {
+      "name": "companyname","type": "STRING"
+    },
+    {
+      "name": "contactname","type": "STRING"
+    },
+    {
+      "name": "contacttitle","type": "STRING"
+    },
+    {
+      "name": "address","type": "STRING"
+    },
+    {
+      "name": "city","type": "STRING"
+    },
+    {
+      "name": "region","type": "STRING"
+    },
+    {
+      "name": "postalcode","type": "STRING"
+    },
+    {
+      "name": "country","type": "STRING"
+    },
+    {
+      "name": "phone","type": "STRING"
+    },
+    {
+      "name": "fax","type": "STRING"
+    },
+    {
+      "name": "homepage","type": "STRING"
+    }
+  ]
+}

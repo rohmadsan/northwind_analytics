@@ -1,0 +1,120 @@
+﻿categories (
+    categoryid int,
+    categoryname varchar(15),
+    description text,
+    picture bytea
+)
+
+customers (
+    customerid char(5),
+    companyname varchar(40),
+    contactname varchar(30),
+    contacttitle varchar(30),
+    address varchar(60),
+    city varchar(15),
+    region varchar(15),
+    postalcode varchar(10),
+    country varchar(15),
+    phone varchar(24),
+    fax varchar(24)
+)
+
+employees (
+    employeeid int,
+    lastname varchar(20),
+    firstname varchar(10),
+    title varchar(30),
+    titleofcourtesy varchar(25),
+    birthdate date,
+    hiredate date,
+    address varchar(60),
+    city varchar(15),
+    region varchar(15),
+    postalcode varchar(10),
+    country varchar(15),
+    homephone varchar(24),
+    extension varchar(4),
+    photo bytea,
+    notes text,
+    reportto int,
+    photopath varchar(255)
+)
+
+employee_territories (
+    employeeid int,
+    territoryid varchar(20)
+)
+
+order_details (
+    orderid int,
+    productid int,
+    unitprice money,
+    quantity smallint,
+    discount real
+)
+
+orders (
+    orderid int,
+    customerid char(5),
+    employeeid int,
+    orderdate date,
+    requireddate date,
+    shippeddate date,
+    shipvia int,
+    freight money,
+    shipname varchar(40),
+    shipaddress varchar(60),
+    shipcity varchar(15),
+    shipregion varchar(15),
+    shippostalcode varchar(10),
+    shipcountry varchar(15)
+)
+
+products (
+    productid int,
+    productname varchar(40),
+    supplierid int,
+    categoryid int,
+    quantityperunit varchar(20),
+    unitprice money,
+    unitsinstock smallint,
+    unitsonorder smallint,
+    reorderlevel smallint,
+    discontinued bit
+)
+
+regions (
+    regionid int,
+    regiondescription char(50)
+)
+
+shippers (
+    shipperid int,
+    companyname varchar(40),
+    phone varchar(24)
+)
+
+suppliers (
+    supplierid int,
+    companyname varchar(40),
+    contactname varchar(30),
+    contacttitle varchar(30),
+    address varchar(60),
+    city varchar(15),
+    region varchar(15),
+    postalcode varchar(10),
+    country varchar(15),
+    phone varchar(24),
+    fax varchar(24),
+    homepage text
+)
+
+territories (
+    territoryid varchar(20),
+    territorydescription char(50),
+    regionid int
+)
+
+
+
+
